@@ -7,7 +7,7 @@
 
 ## About
 A [React](https://reactjs.org/) bitcoin plugin component for effortlessly 
-adding bitcoin functionality to your websites and apps.
+incorporating bitcoin functionality into your websites and apps.
 
 This is an open-source project (that has just started and still has a long way to go) - 
 open to PRs, suggestions, Github Issues, comments, complaints and compliments.😁
