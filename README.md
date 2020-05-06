@@ -1,6 +1,6 @@
 # bitcoin-app
 
-#### A Bitcoin App by Bitcoin-Api.io
+#### A Bitcoin App by [Bitcoin-Api.io](https://bitcoin-api.io)
 
 [![npm version](https://badge.fury.io/js/bitcoin-app.svg)](https://badge.fury.io/js/bitcoin-app)
 
