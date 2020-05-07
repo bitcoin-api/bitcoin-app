@@ -8,7 +8,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 import { getState, setState } from '../../../../../reduxX';
-import { fonts, colours } from '../../../../constants';
+import { fonts } from '../../../../../constants';
 import componentDidMount from './componentDidMount';
 
 

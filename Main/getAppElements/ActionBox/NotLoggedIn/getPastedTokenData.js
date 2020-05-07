@@ -1,6 +1,6 @@
 import Clipboard from '@react-native-community/clipboard';
 // import BitcoinApi from 'bitcoin-api';
-import { tokens } from '../../../utils';
+import { tokens } from '../../../../utils';
 
 
 export default async () => {

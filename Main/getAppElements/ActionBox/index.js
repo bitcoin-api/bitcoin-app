@@ -7,7 +7,7 @@ import NotLoggedIn from './NotLoggedIn';
 import LoggedIn from './LoggedIn';
 import { getState } from '../../../reduxX';
 import componentDidMount from './componentDidMount';
-import { colours } from '../../constants';
+import { colours } from '../../../constants';
 
 
 const styles = StyleSheet.create({

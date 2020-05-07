@@ -6,7 +6,7 @@ import {
     Text
 } from 'react-native';
 import { getState, setState } from '../../../../../reduxX';
-import { actionBoxModes, colours, fonts } from '../../../../constants';
+import { actionBoxModes, colours, fonts } from '../../../../../constants';
 
 
 const getStyles = () => {

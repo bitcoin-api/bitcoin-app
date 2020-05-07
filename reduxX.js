@@ -17,7 +17,7 @@ import ReduxX, {
  
 } from 'react-state-management';
 
-import { mainStyles, mainStyleToMainStyleObject } from './rootConstants';
+import { mainStyles, mainStyleToMainStyleObject } from './constants';
 
 const initialMainStyleObject = mainStyleToMainStyleObject[ mainStyles.dark ];
  

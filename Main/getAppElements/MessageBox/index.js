@@ -9,7 +9,7 @@ import {
     mainStyles,
     mainStyleToMainStyleObject
 
-} from '../../constants';
+} from '../../../constants';
 import { getState, setState } from '../../../reduxX';
 
 

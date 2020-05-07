@@ -7,7 +7,7 @@ import BalanceDisplay from './BalanceDisplay';
 import ViewAddressButton from './ViewAddressButton';
 import ViewAddressZone from './ViewAddressZone';
 import { getState } from '../../../../reduxX';
-import { actionBoxModes, colours } from '../../../constants';
+import { actionBoxModes } from '../../../../constants';
 
 
 const styles = StyleSheet.create({

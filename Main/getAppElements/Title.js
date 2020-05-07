@@ -4,7 +4,7 @@ import {
     View,
     Text
 } from 'react-native';
-import { fonts, colours } from '../constants';
+import { fonts, colours } from '../../constants';
 import { getState } from '../../reduxX';
 
 

@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage';
-import { tokens } from '../../../utils';
+import { tokens } from '../../../../utils';
 // import { stringify } from '../utils';
 
 
