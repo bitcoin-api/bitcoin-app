@@ -8,7 +8,7 @@ import {
 import getPastedTokenData from './getPastedTokenData';
 import AsyncStorage from '@react-native-community/async-storage';
 import { getState, setState } from '../../../../reduxX';
-import { colours } from '../../../constants';
+import { fonts } from '../../../constants';
 
 
 const getStyles = () => {
@@ -42,6 +42,7 @@ const getStyles = () => {
         buttonText: {
 
             color: mainStyleObject.color,
+            fontFamily: fonts.merriweather.regular
         }
     });
 };
