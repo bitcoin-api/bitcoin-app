@@ -6,18 +6,26 @@ export const mainStyles = {
     light: 'light',
 };
 
-export const mainStyleToMainStyleObject = {
+const mainStyleToMainStyleObject = {
 
     [mainStyles.dark]: {
 
-        mainStyle: mainStyles.dark,
         color: '#ffffff',
         backgroundColor: '#000000',
     },
     [mainStyles.light]: {
 
-        mainStyle: mainStyles.light,
         color: '#000000',
         backgroundColor: '#ffffff',
     }
 };
+
+for( const mainStyle in mainStyleToMainStyleObject ) {
+
+    const mainStyleObject = mainStyleToMainStyleObject[ mainStyle ];
+
+    mainStyleObject.mainStyle = mainStyle;
+}
+
+
+export { mainStyleToMainStyleObject };
