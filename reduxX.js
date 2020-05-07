@@ -16,6 +16,10 @@ import ReduxX, {
     v,
  
 } from 'react-state-management';
+
+import { mainStyles, mainStyleToMainStyleObject } from './rootConstants';
+
+const initialMainStyleObject = mainStyleToMainStyleObject[ mainStyles.dark ];
  
  
 export const {
@@ -35,12 +39,7 @@ export const {
 
         bitcoinApi: v( null ),
 
-        mainStyleObject: v({
-
-            mainStyle: 'dark',
-            backgroundColor: '#000000',
-            color: '#ffffff'
-        }),
+        mainStyleObject: v( initialMainStyleObject ),
 
         auth: {
  
