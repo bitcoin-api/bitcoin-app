@@ -29,19 +29,6 @@ export default () => {
 
     const mainStyleObject = getState( 'mainStyleObject' );
 
-    console.log(`
-    
-    
-        MEGA LOG: ${ JSON.stringify( {
-            
-            mainStyleObject
-
-        }, null, 4 ) }
-    
-    
-    `);
-    
-
     return e(
         View,
         {
