@@ -1,6 +1,9 @@
+import { Colors } from "react-native/Libraries/NewAppScreen";
+
 export const actionBoxModes = {
 
     viewAddress: 'viewAddress',
+    withdraw: 'withdraw',
 };
 
 export const fonts = {
@@ -16,10 +19,14 @@ export const colours = {
     black: '#000000',
     white: '#ffffff',
 
-    bitcoinBlue: '#61B3BE',
-    bitcoinOrgange: '#FE8834',
-    bitcoinGrey: '#656776',
-    bitcoinDarkGrey: '#1A2836',
+    lightTechBlue: '#01537B',
+    
+    bitcoin: {
+        blue: '#61B3BE',
+        orange: '#FE8834',
+        grey: '#656776',
+        darkGrey: '#1A2836',
+    },
 };
 
 export const mainStyles = {
@@ -32,13 +39,17 @@ const mainStyleToMainStyleObject = {
 
     [mainStyles.dark]: {
 
-        color: '#ffffff',
-        backgroundColor: '#000000',
+        color: colours.white,
+        backgroundColor: colours.black,
+        alternateBackgroundColor: colours.lightTechBlue,
+        alternateColor: colours.white,
     },
     [mainStyles.light]: {
 
-        color: '#000000',
-        backgroundColor: '#ffffff',
+        color: colours.black,
+        backgroundColor: colours.white,
+        alternateBackgroundColor: colours.lightTechBlue,
+        alternateColor: colours.white,
     }
 };
 

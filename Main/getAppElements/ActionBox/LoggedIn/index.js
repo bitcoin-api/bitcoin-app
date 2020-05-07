@@ -5,6 +5,8 @@ import {
 } from 'react-native';
 import BalanceDisplay from './BalanceDisplay';
 import ViewAddressButton from './ViewAddressButton';
+import WithdrawButton from './WithdrawButton';
+import WithdrawZone from './WithdrawZone';
 import ViewAddressZone from './ViewAddressZone';
 import { getState } from '../../../../reduxX';
 import { actionBoxModes } from '../../../../constants';
@@ -37,12 +39,20 @@ export default () => {
             e( ViewAddressZone ),
         );
     }
+    else if( actionBoxMode === actionBoxModes.withdraw ) {
+
+        components.push( 
+            
+            e( WithdrawZone ),
+        );
+    }
     else {
 
         components.push( 
             
             e( BalanceDisplay ),
-            e( ViewAddressButton )
+            e( ViewAddressButton ),
+            e( WithdrawButton )
         );
     }
 

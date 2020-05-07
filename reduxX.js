@@ -48,12 +48,17 @@ export const {
 
         actionBox: {
 
-            mode: v( null ),
+            mode: v( 'withdraw' ),
         },
 
         viewAddressZone: {
 
             addressData: v( null ),
+        },
+
+        withdrawZone: {
+
+            amount: v( 0 ),
         }
     }
 });
