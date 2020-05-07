@@ -14,13 +14,11 @@ open to PRs, suggestions, Github Issues, comments, complaints and compliments.ðŸ
 
 
 <p float="left">
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_1.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_2.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_6.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_5.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_7.png" width="170" />
 </p>
-<p float="left">
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_3.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_4.png#1" width="170" />
-</p>
+
 
 
 #### Technical Support 
