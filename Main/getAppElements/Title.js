@@ -5,31 +5,64 @@ import {
     Text
 } from 'react-native';
 import { fonts, colours } from '../constants';
+import { getState } from '../../reduxX';
 
 
-const styles = StyleSheet.create({
-    outerContainer: {
-        // backgroundColor: 'pink',
+const getStyles = () => {
+    
+    const mainStyleObject = getState( 'mainStyleObject' );
 
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        flex: 0.2,
-    },
+    return StyleSheet.create({
 
-    titleText: {
+        outerContainer: {
+            // backgroundColor: 'pink',
+    
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            flex: 0.2,
+        },
+    
+        titleText: {
+    
+            marginTop: 90,
+            fontSize: 20,
+            color: colours.black,
+            color: mainStyleObject.color,
+            fontFamily: fonts.merriweather.bold,
+        }
+    })
+};
 
-        marginTop: 90,
-        fontSize: 20,
-        color: colours.black,
-        fontFamily: fonts.merriweather.bold,
-    }
-});
+
+
+
+// const styles = StyleSheet.create({
+//     outerContainer: {
+//         // backgroundColor: 'pink',
+
+//         display: 'flex',
+//         flexDirection: 'column',
+//         alignItems: 'center',
+//         justifyContent: 'flex-start',
+//         flex: 0.2,
+//     },
+
+//     titleText: {
+
+//         marginTop: 90,
+//         fontSize: 20,
+//         color: colours.black,
+//         fontFamily: fonts.merriweather.bold,
+//     }
+// });
 
 
 export default () => {
   
+    const styles = getStyles();
+
     return e(
         View,
         {

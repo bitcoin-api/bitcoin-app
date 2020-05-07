@@ -1,9 +1,16 @@
 import { createElement as e } from 'react';
 import {
     StyleSheet,
-    View,
+    TouchableOpacity,
 } from 'react-native';
-import { colours } from '../../constants';
+import {
+    
+    colours,
+    mainStyles,
+    mainStyleToMainStyleObject
+
+} from '../../constants';
+import { getState, setState } from '../../../reduxX';
 
 
 const styles = StyleSheet.create({
@@ -24,9 +31,32 @@ const styles = StyleSheet.create({
 export default () => {
   
     return e(
-        View,
+        TouchableOpacity,
         {
             style: styles.outerContainer,
+            onPress: () => {
+
+                const {
+
+                    mainStyle
+
+                } = getState( 'mainStyleObject' );
+
+                if( mainStyle === mainStyles.light ) {
+
+                    setState(
+                        [ 'mainStyleObject' ],
+                        mainStyleToMainStyleObject[ mainStyles.dark ]
+                    );
+                }
+                else {
+
+                    setState(
+                        [ 'mainStyleObject' ],
+                        mainStyleToMainStyleObject[ mainStyles.light ]
+                    );
+                }
+            },
         }
     );
 };

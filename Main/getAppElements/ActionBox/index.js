@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import NotLoggedIn from './NotLoggedIn';
 import LoggedIn from './LoggedIn';
-import { getState } from '../../reduxX';
+import { getState } from '../../../reduxX';
 import componentDidMount from './componentDidMount';
 import { colours } from '../../constants';
 

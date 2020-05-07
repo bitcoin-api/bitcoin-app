@@ -34,7 +34,14 @@ export const {
     initialState: {
 
         bitcoinApi: v( null ),
- 
+
+        mainStyleObject: v({
+
+            mainStyle: 'dark',
+            backgroundColor: '#000000',
+            color: '#ffffff'
+        }),
+
         auth: {
  
             tokenInfo: v( null ),

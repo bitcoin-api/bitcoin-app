@@ -7,51 +7,56 @@ import {
     Text,
     TouchableOpacity
 } from 'react-native';
-import { getState, setState } from '../../../../reduxX';
+import { getState, setState } from '../../../../../reduxX';
 import { fonts, colours } from '../../../../constants';
 import componentDidMount from './componentDidMount';
 
 
-const styles = StyleSheet.create({
-    outerContainer: {
-        // backgroundColor: 'indigo',
-        height: '100%',
-        width: '100%',
+const getStyles = () => {
 
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-around'
-    },
+    const mainStyleObject = getState( 'mainStyleObject' );
+    
+    return StyleSheet.create({
+        outerContainer: {
+            // backgroundColor: 'indigo',
+            height: '100%',
+            width: '100%',
 
-    qrCode: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+        },
 
-        width: '60%',
-        height: '60%',
-        backgroundColor: colours.white,
-    },
+        qrCode: {
 
-    backButton: {
+            width: '60%',
+            height: '60%',
+            backgroundColor: mainStyleObject.backgroundColor,
+        },
 
-        width: '100%',
-        backgroundColor: colours.white,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+        backButton: {
 
-    backButtonText: {
+            width: '100%',
+            backgroundColor: mainStyleObject.backgroundColor,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+        },
 
-        fontSize: 20,
-        width: '100%',
-        paddingTop: 13,
-        paddingBottom: 13,
-        textAlign: 'center',
-        color: colours.black,
-        fontFamily: fonts.merriweather.regular,
-    },
-});
+        backButtonText: {
+
+            fontSize: 20,
+            width: '100%',
+            paddingTop: 13,
+            paddingBottom: 13,
+            textAlign: 'center',
+            color: mainStyleObject.color,
+            fontFamily: fonts.merriweather.regular,
+        },
+    });
+};
 
 const getQrCodeUrl = ({ address }) => (
 
@@ -64,7 +69,9 @@ export default () => {
     useEffect( componentDidMount, [] );
 
     const addressData = getState( 'viewAddressZone', 'addressData' );
-        
+    
+    const styles = getStyles();
+
     return e(
         View,
         {

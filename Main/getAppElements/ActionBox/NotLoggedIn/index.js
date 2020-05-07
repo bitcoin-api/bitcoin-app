@@ -7,42 +7,49 @@ import {
 } from 'react-native';
 import getPastedTokenData from './getPastedTokenData';
 import AsyncStorage from '@react-native-community/async-storage';
-import { setState } from '../../../reduxX';
+import { getState, setState } from '../../../../reduxX';
 import { colours } from '../../../constants';
 
 
-const styles = StyleSheet.create({
-    outerContainer: {
-        // backgroundColor: 'red',
-        width: '100%',
-        height: '100%',
+const getStyles = () => {
 
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-around'
-    },
+    const mainStyleObject = getState( 'mainStyleObject' );
+    
+    return StyleSheet.create({
+        outerContainer: {
+            // backgroundColor: 'red',
+            width: '100%',
+            height: '100%',
 
-    button: {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+        },
 
-        width: '85%',
-        flex: 0.25,
-        backgroundColor: colours.white,
-        color: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-around'
-    },
+        button: {
 
-    buttonText: {
+            width: '85%',
+            flex: 0.25,
+            backgroundColor: mainStyleObject.backgroundColor,
+            color: 'white',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+        },
 
-        color: colours.black
-    }
-});
+        buttonText: {
+
+            color: mainStyleObject.color,
+        }
+    });
+};
 
 
 export default () => {
+
+    const styles = getStyles();
 
     return e(
         View,

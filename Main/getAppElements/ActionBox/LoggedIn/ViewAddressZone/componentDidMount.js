@@ -1,4 +1,4 @@
-import { getState, setState } from '../../../../reduxX';
+import { getState, setState } from '../../../../../reduxX';
 // import { createElement as e } from 'react';
 // import {
 //     StyleSheet,

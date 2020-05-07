@@ -5,7 +5,7 @@
 // } from 'react-native';
 // import NotLoggedIn from './NotLoggedIn';
 // import LoggedIn from './LoggedIn';
-import { /*getState,*/ setState } from '../../../reduxX';
+import { /*getState,*/ setState } from '../../../../reduxX';
 import getIsLoggedInData from './getIsLoggedInData';
 
 

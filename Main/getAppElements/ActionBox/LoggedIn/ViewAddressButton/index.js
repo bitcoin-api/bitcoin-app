@@ -5,36 +5,42 @@ import {
     View,
     Text
 } from 'react-native';
-import { setState } from '../../../../reduxX';
+import { getState, setState } from '../../../../../reduxX';
 import { actionBoxModes, colours, fonts } from '../../../../constants';
 
 
-const styles = StyleSheet.create({
-    outerContainer: {
-        backgroundColor: colours.white,
-        flex: 0.2,
-        width: '100%',
+const getStyles = () => {
 
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'space-around'
-    },
-    text: {
+    const mainStyleObject = getState( 'mainStyleObject' );
+    
+    return StyleSheet.create({
+        outerContainer: {
+            backgroundColor: mainStyleObject.backgroundColor,
+            flex: 0.2,
+            width: '100%',
 
-        width: '100%',
-        textAlign: 'left',
-        fontFamily: fonts.merriweather.regular,
-        fontSize: 20,
-        paddingLeft: 30,
-        color: colours.black,
-    },
-});
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-around'
+        },
+        text: {
+
+            width: '100%',
+            textAlign: 'left',
+            fontFamily: fonts.merriweather.regular,
+            fontSize: 20,
+            paddingLeft: 30,
+            color: mainStyleObject.color,
+        },
+    });
+};
 
 
 export default () => {
 
     // const tokenInfo = getState( 'auth', 'tokenInfo' );
+    const styles = getStyles();
 
     return e(
         // View,
