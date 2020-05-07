@@ -11,7 +11,7 @@ import { actionBoxModes, colours, fonts } from '../../../../constants';
 
 const styles = StyleSheet.create({
     outerContainer: {
-        backgroundColor: colours.black,
+        backgroundColor: colours.white,
         flex: 0.2,
         width: '100%',
 
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         fontFamily: fonts.merriweather.regular,
         fontSize: 20,
         paddingLeft: 30,
-        color: colours.white,
+        color: colours.black,
     },
 });
 

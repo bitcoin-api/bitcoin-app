@@ -8,7 +8,6 @@ import Main from './Main';
 
 const styles = StyleSheet.create({
     outerContainer: {
-        backgroundColor: 'black',
         // width: '100%',
         // height: '100%',
         flex: 1,

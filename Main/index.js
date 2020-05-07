@@ -6,10 +6,11 @@ import {
 } from 'react-native';
 import { setUpReduxX } from './reduxX';
 import getAppElements from './getAppElements';
+import { colours } from './constants';
 
 const styles = StyleSheet.create({
     outerContainer: {
-        // backgroundColor: 'pink',
+        backgroundColor: colours.white,
         width: '100%',
         // height: '100%',
 

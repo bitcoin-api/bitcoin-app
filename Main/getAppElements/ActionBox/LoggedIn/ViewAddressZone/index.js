@@ -8,7 +8,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 import { getState, setState } from '../../../../reduxX';
-import { fonts } from '../../../../constants';
+import { fonts, colours } from '../../../../constants';
 import componentDidMount from './componentDidMount';
 
 
@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
 
         width: '60%',
         height: '60%',
-        backgroundColor: 'black',
+        backgroundColor: colours.white,
     },
 
     backButton: {
 
         width: '100%',
-        backgroundColor: 'black',
+        backgroundColor: colours.white,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         paddingTop: 13,
         paddingBottom: 13,
         textAlign: 'center',
-        color: 'white',
+        color: colours.black,
         fontFamily: fonts.merriweather.regular,
     },
 });

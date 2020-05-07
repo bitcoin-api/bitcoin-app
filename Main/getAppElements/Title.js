@@ -4,7 +4,7 @@ import {
     View,
     Text
 } from 'react-native';
-import { fonts } from '../constants';
+import { fonts, colours } from '../constants';
 
 
 const styles = StyleSheet.create({
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 
         marginTop: 90,
         fontSize: 20,
-        color: 'white',
+        color: colours.black,
         fontFamily: fonts.merriweather.bold,
     }
 });

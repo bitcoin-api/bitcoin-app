@@ -13,8 +13,8 @@ This is an open-source project (that has just started and still has a long way t
 open to PRs, suggestions, Github Issues, comments, complaints and compliments.😁
 
 <p float="left">
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_1.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_2.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_3.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_4.png" width="170" />
 </p>
 
 

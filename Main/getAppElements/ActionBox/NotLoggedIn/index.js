@@ -8,6 +8,7 @@ import {
 import getPastedTokenData from './getPastedTokenData';
 import AsyncStorage from '@react-native-community/async-storage';
 import { setState } from '../../../reduxX';
+import { colours } from '../../../constants';
 
 
 const styles = StyleSheet.create({
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
 
         width: '85%',
         flex: 0.25,
-        backgroundColor: 'black',
+        backgroundColor: colours.white,
         color: 'white',
         display: 'flex',
         flexDirection: 'column',
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
 
     buttonText: {
 
-        color: 'white'
+        color: colours.black
     }
 });
 
