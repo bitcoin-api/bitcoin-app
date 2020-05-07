@@ -19,7 +19,7 @@ open to PRs, suggestions, Github Issues, comments, complaints and compliments.ğŸ
 </p>
 <p float="left">
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_3.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_4.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_4.png#1" width="170" />
 </p>
 
 
