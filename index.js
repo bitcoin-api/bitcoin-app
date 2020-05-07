@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
 });
 
 
+//TODO: make style updater for background colour
 export default () => {
   
     return e(
