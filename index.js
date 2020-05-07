@@ -34,7 +34,7 @@ export default () => {
 
     setUpReduxX( useState );
 
-    const styles = getStyles()
+    const styles = getStyles();
 
     return e(
         View,
