@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-app",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Bitcoin app by Bitcoin-Api.io",
   "main": "index.js",
   "scripts": {
