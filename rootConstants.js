@@ -1,3 +1,5 @@
+// TODO: add all constants and utils to root
+
 export const mainStyles = {
 
     dark: 'dark',
