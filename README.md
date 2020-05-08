@@ -9,9 +9,6 @@
 A [React](https://reactjs.org/) bitcoin plugin component for effortlessly 
 incorporating bitcoin functionality into your websites and apps.
 
-This is an open-source project (that has just started and still has a long way to go) - 
-open to PRs, suggestions, Github Issues, comments, complaints and compliments.😁
-
 
 <p float="left">
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_8.png" width="170" />
@@ -20,6 +17,8 @@ open to PRs, suggestions, Github Issues, comments, complaints and compliments.�
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_9.png" width="170" />
 </p>
 
+
+This is an open-source project - open to PRs, suggestions, Github Issues, comments, complaints and compliments.😁
 
 
 #### Technical Support 
