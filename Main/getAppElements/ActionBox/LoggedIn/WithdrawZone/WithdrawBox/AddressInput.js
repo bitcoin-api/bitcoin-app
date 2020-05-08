@@ -1,4 +1,4 @@
-import { createElement as e } from 'react';
+import { useEffect, createElement as e } from 'react';
 import {
     StyleSheet,
     // TouchableOpacity,
@@ -7,7 +7,7 @@ import {
     TextInput
 } from 'react-native';
 import { getState, setState } from '../../../../../../reduxX';
-import { fonts } from '../../../../../../constants';
+import { fonts, colours } from '../../../../../../constants';
 // import componentDidMount from './componentDidMount';
 
 const getStyles = () => {
@@ -15,7 +15,7 @@ const getStyles = () => {
     const {
 
         // backgroundColor,
-        color,
+        // color,
         alternateBackgroundColor,
         alternateColor,
 
@@ -61,11 +61,9 @@ export default () => {
 
     // useEffect( componentDidMount, [] );
 
-    const amount = getState( 'withdrawZone', 'amount' );
+    const address = getState( 'withdrawZone', 'address' );
     
     const styles = getStyles();
-
-    const amountDisplay = String( amount );
 
     return e(
         View,
@@ -75,53 +73,20 @@ export default () => {
         e( 
             TextInput,
             {
+                placeholder: 'address',
+                placeholderTextColor: colours.bitcoin.darkGrey,
                 onChangeText: text => {
 
-                    const textAsNumber = Number( text );
-
-                    if(
-                        Number.isNaN( textAsNumber ) ||
-                        textAsNumber > 69 ||
-                        text.startsWith( '00' ) ||
-                        (
-                            (text.length > 1) &&
-                            text.startsWith( '0' ) &&
-                            text[1] !== ( '.' )
-                        )
-                    ) {
-
-                        return;
-                    }
-                    
-                    const periodSplitText = text.split( '.' );
-
-                    if(
-                        (periodSplitText.length === 2) &&
-                        periodSplitText[1].length > 8
-                    ) {
+                    if( text.length > 50 ) {
 
                         return;
                     }
                 
-                    setState( [ 'withdrawZone', 'amount' ], text );
+                    setState( [ 'withdrawZone', 'address' ], text.trim() );
                 },
-                keyboardType: 'numeric', 
-                value: amountDisplay,
+                value: address,
                 style: styles.theText,
             }
-        ),
-        e(
-            View,
-            {
-                style: styles.btcTextContainer,
-            },
-            e(
-                Text,
-                {
-                    style: styles.theText,
-                },
-                'BTC'
-            )
         )
     );
 };

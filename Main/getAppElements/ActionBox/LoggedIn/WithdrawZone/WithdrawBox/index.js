@@ -9,6 +9,8 @@ import {
 import { getState, setState } from '../../../../../../reduxX';
 // import { fonts } from '../../../../../../constants';
 import AmountInput from './AmountInput';
+import AddressInput from './AddressInput';
+import WithdrawButton from './WithdrawButton';
 // import componentDidMount from './componentDidMount';
 
 
@@ -30,12 +32,13 @@ const getStyles = () => {
 
             backgroundColor,
 
+            width: '90%',
             flex: 0.7,
 
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-around'
+            justifyContent: 'space-between'
         },
     });
 };
@@ -56,6 +59,8 @@ export default () => {
             // },
             // value: value,
         },
-        e( AmountInput )
+        e( AmountInput ),
+        e( AddressInput ),
+        e( WithdrawButton )
     );
 };

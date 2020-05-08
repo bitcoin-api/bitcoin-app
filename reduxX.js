@@ -29,7 +29,7 @@ export const {
     getState,
  
     /* Optional Exports: */
-    // resetReduxX,
+    resetReduxX,
     // getGlobalUseState,
     // oldeFashionedStateManagement
  
@@ -48,7 +48,7 @@ export const {
 
         actionBox: {
 
-            mode: v( 'withdraw' ),
+            mode: v( null ),
         },
 
         viewAddressZone: {
@@ -59,6 +59,7 @@ export const {
         withdrawZone: {
 
             amount: v( 0 ),
+            address: v( '' ),
         }
     }
 });
