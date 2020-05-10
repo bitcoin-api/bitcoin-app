@@ -8,6 +8,7 @@ import ViewAddressButton from './ViewAddressButton';
 import WithdrawButton from './WithdrawButton';
 import WithdrawZone from './WithdrawZone';
 import ViewAddressZone from './ViewAddressZone';
+import VerifySection from './VerifySection';
 import EjectAndPasteToken from './EjectAndPasteToken';
 import { getState } from '../../../../reduxX';
 import { actionBoxModes } from '../../../../constants';
@@ -30,6 +31,7 @@ const styles = StyleSheet.create({
 export default () => {
 
     const actionBoxMode = getState( 'actionBox', 'mode' );
+    const tokenInfo = getState( 'auth', 'tokenInfo' );
 
     const components = [];
 
@@ -51,9 +53,27 @@ export default () => {
 
         components.push( 
             
-            e( BalanceDisplay ),
-            e( ViewAddressButton ),
-            e( WithdrawButton ),
+            e( BalanceDisplay )
+        );
+
+        if( tokenInfo.isActivated ) {
+
+            components.push( 
+            
+                e( ViewAddressButton ),
+                e( WithdrawButton )
+            );
+        }
+        else {
+
+            components.push(
+
+                e( VerifySection )
+            );
+        }
+
+        components.push(
+
             e( EjectAndPasteToken )
         );
     }
