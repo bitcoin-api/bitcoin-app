@@ -5,6 +5,7 @@ import {
     Text,
     TouchableOpacity
 } from 'react-native';
+import createNewToken from './createNewToken';
 import getPastedTokenData from './getPastedTokenData';
 import AsyncStorage from '@react-native-community/async-storage';
 import { getState, setState } from '../../../../reduxX';
@@ -48,6 +49,34 @@ const getStyles = () => {
 };
 
 
+const updateTokenInfoAppData = async ({
+
+    getTokenDataFunction
+
+}) => {
+
+    try {
+        
+        const {
+
+            token,
+            tokenInfo,
+            
+        } = await getTokenDataFunction();
+
+        setState( [ 'auth', 'tokenInfo' ], tokenInfo );
+        await AsyncStorage.setItem( 'token', token );
+    }
+    catch( err ) {
+
+        console.log( 'error in updateTokenInfoAppData:', err );
+
+        setState( [ 'auth', 'tokenInfo' ], null );
+        await AsyncStorage.removeItem( 'token' );
+    }
+};
+
+
 export default () => {
 
     const styles = getStyles();
@@ -62,7 +91,13 @@ export default () => {
             {
                 // title: 'Create Token',
                 style: styles.button,
-                onPress: async () => {}
+                onPress: async () => {
+
+                    await updateTokenInfoAppData({
+
+                        getTokenDataFunction: createNewToken,
+                    });
+                }
             },
             e(
                 Text,
@@ -80,25 +115,10 @@ export default () => {
                 // color: '#f194ff',
                 onPress: async () => {
 
-                    try {
-                        
-                        const {
+                    await updateTokenInfoAppData({
 
-                            token,
-                            tokenInfo,
-                            
-                        } = await getPastedTokenData();
-
-                        setState( [ 'auth', 'tokenInfo' ], tokenInfo );
-                        await AsyncStorage.setItem( 'token', token );
-                    }
-                    catch( err ) {
-
-                        console.log( 'error in getPastedToken:', err );
-
-                        setState( [ 'auth', 'tokenInfo' ], null );
-                        await AsyncStorage.removeItem( 'token' );
-                    }
+                        getTokenDataFunction: getPastedTokenData,
+                    });
                 }
             },
             e(

@@ -8,6 +8,7 @@ import ViewAddressButton from './ViewAddressButton';
 import WithdrawButton from './WithdrawButton';
 import WithdrawZone from './WithdrawZone';
 import ViewAddressZone from './ViewAddressZone';
+import EjectAndPasteToken from './EjectAndPasteToken';
 import { getState } from '../../../../reduxX';
 import { actionBoxModes } from '../../../../constants';
 
@@ -52,7 +53,8 @@ export default () => {
             
             e( BalanceDisplay ),
             e( ViewAddressButton ),
-            e( WithdrawButton )
+            e( WithdrawButton ),
+            e( EjectAndPasteToken )
         );
     }
 
