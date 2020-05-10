@@ -42,6 +42,7 @@ const getStyles = () => {
 
         buttonText: {
 
+            fontSize: 20,
             color: mainStyleObject.color,
             fontFamily: fonts.merriweather.regular
         }
