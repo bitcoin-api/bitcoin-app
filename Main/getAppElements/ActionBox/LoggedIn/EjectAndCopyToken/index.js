@@ -10,7 +10,7 @@ export default () => {
     return e(
         MegaButton,
         {
-            buttonText: 'Paste and Eject Token',
+            buttonText: 'Copy and Eject Token',
             onPress: async () => {
 
                 const string = await AsyncStorage.getItem( 'token' );

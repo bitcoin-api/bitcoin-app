@@ -9,7 +9,7 @@ import WithdrawButton from './WithdrawButton';
 import WithdrawZone from './WithdrawZone';
 import ViewAddressZone from './ViewAddressZone';
 import VerifySection from './VerifySection';
-import EjectAndPasteToken from './EjectAndPasteToken';
+import EjectAndCopyToken from './EjectAndCopyToken';
 import { getState } from '../../../../reduxX';
 import { actionBoxModes } from '../../../../constants';
 
@@ -74,7 +74,7 @@ export default () => {
 
         components.push(
 
-            e( EjectAndPasteToken )
+            e( EjectAndCopyToken )
         );
     }
 
