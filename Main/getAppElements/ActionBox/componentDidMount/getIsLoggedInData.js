@@ -13,7 +13,7 @@ export default async () => {
     const {
 
         tokenInfo,
-        bitcoinApi
+        // bitcoinApi
 
     } = await tokens.initializeBitcoinApi({
 
@@ -25,13 +25,13 @@ export default async () => {
         return {
 
             tokenInfo: null,
-            bitcoinApi: null,
+            // bitcoinApi: null,
         };
     }
 
     return {
 
         tokenInfo,
-        bitcoinApi
+        // bitcoinApi
     };
 };

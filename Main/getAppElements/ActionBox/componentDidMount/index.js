@@ -18,7 +18,7 @@ export default () => {
             const {
 
                 tokenInfo,
-                bitcoinApi
+                // bitcoinApi
 
             } = await getIsLoggedInData();
 
@@ -26,11 +26,7 @@ export default () => {
                 {
                     keys: [ 'auth', 'tokenInfo' ],
                     value: tokenInfo,
-                },
-                {
-                    keys: 'bitcoinApi',
-                    value: bitcoinApi,
-                },
+                }
             );
         }
         catch( err ) {
