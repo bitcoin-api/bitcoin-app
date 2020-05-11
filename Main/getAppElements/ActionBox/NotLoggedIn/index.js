@@ -8,8 +8,10 @@ import {
 import createNewToken from './createNewToken';
 import getPastedTokenData from './getPastedTokenData';
 import AsyncStorage from '@react-native-community/async-storage';
+import Clipboard from '@react-native-community/clipboard';
 import { getState, setState } from '../../../../reduxX';
 import { fonts } from '../../../../constants';
+import { messageBoxCommon } from '../../../../utils';
 
 
 const getStyles = () => {
@@ -70,6 +72,11 @@ const updateTokenInfoAppData = async ({
     }
     catch( err ) {
 
+        messageBoxCommon.setMessage({
+
+            message: err.message
+        });
+
         console.log( 'error in updateTokenInfoAppData:', err );
 
         setState( [ 'auth', 'tokenInfo' ], null );
@@ -111,6 +118,36 @@ export default () => {
         e(
             TouchableOpacity,
             {
+                // title: 'Create Token',
+                style: styles.button,
+                onPress: async () => {
+
+                    try {
+
+                        const token = await AsyncStorage.getItem( 'token' );
+
+                        Clipboard.setString( token );
+                    }
+                    catch( err ) {
+
+                        await messageBoxCommon.setMessage({
+
+                            message: err.message
+                        });
+                    }
+                }
+            },
+            e(
+                Text,
+                {
+                    style: styles.buttonText,
+                },
+                'Copy Token In Storage'
+            )
+        ),
+        e(
+            TouchableOpacity,
+            {
                 // title: 'Paste Token',
                 style: styles.button,
                 // color: '#f194ff',
@@ -127,7 +164,7 @@ export default () => {
                 {
                     style: styles.buttonText,
                 },
-                'Paste Existing Token'
+                'Paste Token from Clipboard'
             )
         )
     );

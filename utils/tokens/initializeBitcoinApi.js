@@ -1,4 +1,7 @@
 import BitcoinApi from 'bitcoin-api';
+import setMessage from '../messageBoxCommon/setMessage';
+// import AsyncStorage from '@react-native-community/async-storage';
+import { resetReduxX, setState } from '../../reduxX';
 
 
 export default async ({
@@ -39,6 +42,8 @@ export default async ({
             );
         }
 
+        setState( 'bitcoinApi', bitcoinApi );
+
         return {
             
             bitcoinApi,
@@ -48,6 +53,17 @@ export default async ({
     catch( err ) {
 
         console.log( 'error in initializeBitcoinApi:', err );
+
+        setMessage({
+
+            message: err.toString()
+        });
+
+        resetReduxX({
+            listOfKeysToInclude: [
+                [ 'auth', 'tokenInfo' ]                
+            ]
+        });
 
         return {
             

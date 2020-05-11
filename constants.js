@@ -1,5 +1,3 @@
-import { Colors } from "react-native/Libraries/NewAppScreen";
-
 export const actionBoxModes = {
 
     viewAddress: 'viewAddress',
@@ -53,7 +51,7 @@ const mainStyleToMainStyleObject = {
     }
 };
 
-for( const mainStyle in mainStyleToMainStyleObject ) {
+for( const mainStyle of Object.keys( mainStyleToMainStyleObject ) ) {
 
     const mainStyleObject = mainStyleToMainStyleObject[ mainStyle ];
 

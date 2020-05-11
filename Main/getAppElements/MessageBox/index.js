@@ -1,29 +1,33 @@
 import { createElement as e } from 'react';
 import {
+    View,
     StyleSheet,
-    TouchableOpacity,
+    // TouchableOpacity,
 } from 'react-native';
 import {
     
     colours,
-    mainStyles,
-    mainStyleToMainStyleObject
+    // mainStyles,
+    // mainStyleToMainStyleObject
 
 } from '../../../constants';
-import { getState, setState } from '../../../reduxX';
+// import { getState, setState } from '../../../reduxX';
+import ChangeMainStyleButton from './ChangeMainStyleButton';
+import TheMessageContainer from './TheMessageContainer';
 
 
 const styles = StyleSheet.create({
     outerContainer: {
         backgroundColor: colours.apiRoyalBlue,
+        // backgroundColor: 'pink',
         width: '100%',
 
         flex: 0.1,
 
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'flex-start'
     },
 });
 
@@ -31,32 +35,11 @@ const styles = StyleSheet.create({
 export default () => {
   
     return e(
-        TouchableOpacity,
+        View,
         {
             style: styles.outerContainer,
-            onPress: () => {
-
-                const {
-
-                    mainStyle
-
-                } = getState( 'mainStyleObject' );
-
-                if( mainStyle === mainStyles.light ) {
-
-                    setState(
-                        [ 'mainStyleObject' ],
-                        mainStyleToMainStyleObject[ mainStyles.dark ]
-                    );
-                }
-                else {
-
-                    setState(
-                        [ 'mainStyleObject' ],
-                        mainStyleToMainStyleObject[ mainStyles.light ]
-                    );
-                }
-            },
-        }
+        },
+        e( ChangeMainStyleButton ),
+        e( TheMessageContainer )
     );
 };

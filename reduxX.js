@@ -60,6 +60,11 @@ export const {
 
             amount: v( 0 ),
             address: v( '' ),
-        }
+        },
+
+        messageBox: {
+
+            theMessage: v( '' ),
+        },
     }
 });

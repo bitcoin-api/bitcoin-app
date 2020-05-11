@@ -11,14 +11,11 @@ incorporating bitcoin functionality into your websites and apps.
 
 
 <p float="left">
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_17.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_13.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_12.png" width="170" />
-</p>
-<p float="left">
-
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_4.png" width="170" />
-  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_16.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_22.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_18.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_19.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_20.png" width="170" />
+  <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_21.png" width="170" />
 </p>
 
 
