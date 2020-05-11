@@ -142,7 +142,7 @@ export default () => {
                 {
                     style: styles.buttonText,
                 },
-                'Copy Token In Storage'
+                'Copy Token in Storage'
             )
         ),
         e(
