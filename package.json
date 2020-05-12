@@ -30,12 +30,14 @@
     "url": "https://github.com/bitcoin-api/bitcoin-app/issues"
   },
   "dependencies": {
+    "bitcoin-api": "^3.6.15",
+    "react-state-management": "^1.0.3"
+  },
+  "peerDependencies": {
     "@react-native-community/async-storage": "^1.9.0",
     "@react-native-community/clipboard": "^1.2.2",
-    "bitcoin-api": "^3.6.15",
     "react": "16.11.0",
-    "react-native": "0.62.2",
-    "react-state-management": "^1.0.3"
+    "react-native": "0.62.2"
   },
   "homepage": "https://github.com/bitcoin-api/bitcoin-app#readme"
 }
