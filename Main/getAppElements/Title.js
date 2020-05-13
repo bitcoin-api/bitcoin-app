@@ -4,7 +4,7 @@ import {
     View,
     Text
 } from 'react-native';
-import { fonts, colours } from '../../constants';
+import { fonts } from '../../constants';
 import { getState } from '../../reduxX';
 
 
@@ -28,11 +28,10 @@ const getStyles = () => {
     
             marginTop: 90,
             fontSize: 20,
-            color: colours.black,
             color: mainStyleObject.color,
             fontFamily: fonts.standard.bold,
         }
-    })
+    });
 };
 
 
