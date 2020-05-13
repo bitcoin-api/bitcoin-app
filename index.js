@@ -26,7 +26,7 @@ const getStyles = () => {
             justifyContent: 'center',
             alignItems: 'center',
         },
-    })
+    });
 };
 
 

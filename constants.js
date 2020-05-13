@@ -1,3 +1,7 @@
+import { Platform } from 'react-native';
+
+const isIOS = Platform.OS === 'ios';
+
 export const actionBoxModes = {
 
     viewAddress: 'viewAddress',
@@ -5,9 +9,16 @@ export const actionBoxModes = {
 };
 
 export const fonts = {
-    merriweather: {
-        regular: 'Merriweather-Regular',
-        bold: 'Merriweather-Bold',
+    
+    merriweather: isIOS ? {
+     
+        regular: 'ArialHebrew',
+        bold: 'ArialHebrew-Bold',
+
+    } : {
+
+        regular: 'normal',
+        bold: 'Roboto',
     }
 };
 
