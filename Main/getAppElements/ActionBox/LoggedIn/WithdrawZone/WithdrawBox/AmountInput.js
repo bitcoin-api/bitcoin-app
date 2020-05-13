@@ -40,7 +40,7 @@ const getStyles = () => {
             // flex: 0.7,
             fontSize: 20,
             padding: 15,
-            fontFamily: fonts.merriweather.regular,
+            fontFamily: fonts.standard.regular,
         },
 
         btcTextContainer: {

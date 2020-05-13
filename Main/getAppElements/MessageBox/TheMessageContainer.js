@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     message: {
 
         color: colours.white,
-        fontFamily: fonts.merriweather.regular,        
+        fontFamily: fonts.standard.regular,        
         fontSize: 16,
         padding: 20,
         textAlign: 'left'

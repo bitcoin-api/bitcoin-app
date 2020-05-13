@@ -47,7 +47,7 @@ const getStyles = () => {
             fontSize: 20,
             textAlign: 'center',
             color: mainStyleObject.color,
-            fontFamily: fonts.merriweather.regular
+            fontFamily: fonts.standard.regular
         }
     });
 };

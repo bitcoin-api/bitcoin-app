@@ -54,7 +54,7 @@ const getStyles = () => {
             paddingBottom: 13,
             textAlign: 'center',
             color,
-            fontFamily: fonts.merriweather.regular,
+            fontFamily: fonts.standard.regular,
         },
     });
 };

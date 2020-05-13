@@ -29,7 +29,7 @@ const getStyles = () => {
             fontSize: 20,
             paddingLeft: 30,
             color: mainStyleObject.color,
-            fontFamily: fonts.merriweather.regular,
+            fontFamily: fonts.standard.regular,
         },
     });
 };

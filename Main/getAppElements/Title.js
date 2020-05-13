@@ -30,7 +30,7 @@ const getStyles = () => {
             fontSize: 20,
             color: colours.black,
             color: mainStyleObject.color,
-            fontFamily: fonts.merriweather.bold,
+            fontFamily: fonts.standard.bold,
         }
     })
 };
@@ -54,7 +54,7 @@ const getStyles = () => {
 //         marginTop: 90,
 //         fontSize: 20,
 //         color: colours.black,
-//         fontFamily: fonts.merriweather.bold,
+//         fontFamily: fonts.standard.bold,
 //     }
 // });
 

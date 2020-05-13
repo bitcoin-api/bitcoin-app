@@ -33,7 +33,7 @@ const getStyles = () => {
 
             width: '100%',
             textAlign: 'left',
-            fontFamily: fonts.merriweather.regular,
+            fontFamily: fonts.standard.regular,
             fontSize: 20,
             paddingLeft: 30,
             color,

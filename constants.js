@@ -10,7 +10,7 @@ export const actionBoxModes = {
 
 export const fonts = {
     
-    merriweather: isIOS ? {
+    standard: isIOS ? {
      
         regular: 'ArialHebrew',
         bold: 'ArialHebrew-Bold',
