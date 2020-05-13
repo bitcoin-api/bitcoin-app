@@ -23,7 +23,7 @@ npm install bitcoin-app --save
 ```
 This needs to be done in the React Native app folder and the following peer-dependencies also need to be installed and linked to your existing React Native app:
 
-* [React Native AsyncStorage](https://github.com/react-native-community/async-storage)
+* [React Native Async Storage](https://github.com/react-native-community/async-storage)
 * [React Native Clipboard](https://github.com/react-native-community/clipboard)
 
 ## Setup
