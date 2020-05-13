@@ -6,7 +6,7 @@
 
 
 ## About
-A [React Native](https://reactnative.dev) bitcoin plugin component for effortlessly 
+A [React Native](https://reactnative.dev) bitcoin app plugin component for effortlessly 
 incorporating bitcoin functionality into your React Native apps.
 
 
