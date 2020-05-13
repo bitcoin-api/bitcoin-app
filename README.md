@@ -6,18 +6,60 @@
 
 
 ## About
-A [React](https://reactjs.org/) bitcoin plugin component for effortlessly 
-incorporating bitcoin functionality into your websites and apps.
+A [React Native](https://reactnative.dev) bitcoin plugin component for effortlessly 
+incorporating bitcoin functionality into your React Native apps.
 
+
+## Table of Contents
+* [Install](#install)
+* [Setup](#setup)
+* [Example](#example)
+
+## Install
+
+With "bitcoin-app", all that's needed is to first install the NPM module:
+```
+npm install bitcoin-app --save
+```
+This needs to be done in the React Native app folder and the following peer-dependencies also need to be installed and linked to your existing React Native app:
+
+* [React Native AsyncStorage](https://github.com/react-native-community/async-storage)
+* [React Native Clipboard](https://github.com/react-native-community/clipboard)
+
+## Setup
+
+Next, import the BitcoinApp React Native component and place it in your existing React Native App:
+
+```.js
+import BitcoinApp from 'bitcoin-app';
+
+...
+
+const App = () => {
+  return (
+      <View style={styles.body}>
+        <BitcoinApp/>
+      </View>
+  );
+};
+```
+
+## Example
+Using the installation and setup steps above, the following bitcoin app is now available within your React Native app!:
 
 <p float="left">
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_24.png" width="170" />
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_26.png" width="170" />
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_27.png" width="170" />
+</p>
+
+<p float="left">
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_20.png" width="170" />
   <img src="https://bitcoin-api.s3.amazonaws.com/images/demo/app/app_screenshot_25.png" width="170" />
 </p>
 
+
+---
 
 This is an open-source project - open to PRs, suggestions, Github Issues, comments, complaints and compliments.😁
 
