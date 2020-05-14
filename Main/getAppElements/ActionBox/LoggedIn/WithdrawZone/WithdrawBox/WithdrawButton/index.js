@@ -1,13 +1,11 @@
-import { useEffect, createElement as e } from 'react';
+import { createElement as e } from 'react';
 import {
     StyleSheet,
     TouchableOpacity,
-    View,
     Text,
-    TextInput
 } from 'react-native';
-import { getState, setState } from '../../../../../../../reduxX';
-import { fonts, colours } from '../../../../../../../constants';
+import { getState } from '../../../../../../../reduxX';
+import { fonts } from '../../../../../../../constants';
 import withdrawBitcoin from './withdrawBitcoin';
 // import componentDidMount from './componentDidMount';
 

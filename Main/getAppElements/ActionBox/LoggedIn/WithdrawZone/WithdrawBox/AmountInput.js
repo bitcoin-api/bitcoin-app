@@ -15,7 +15,6 @@ const getStyles = () => {
     const {
 
         // backgroundColor,
-        color,
         alternateBackgroundColor,
         alternateColor,
 

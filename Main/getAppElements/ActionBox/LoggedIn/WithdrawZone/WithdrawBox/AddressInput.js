@@ -1,9 +1,8 @@
-import { useEffect, createElement as e } from 'react';
+import { createElement as e } from 'react';
 import {
     StyleSheet,
     // TouchableOpacity,
     View,
-    Text,
     TextInput
 } from 'react-native';
 import { getState, setState } from '../../../../../../reduxX';
