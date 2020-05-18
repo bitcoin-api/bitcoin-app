@@ -26,7 +26,7 @@ const getStyles = () => {
             justifyContent: 'space-between',
             alignItems: 'center',
         },
-    })
+    });
 };
 
 

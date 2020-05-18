@@ -25,7 +25,7 @@ const getStyles = () => {
             width: '100%',
 
             display: 'flex',
-            flexDirection: 'column',
+            flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-around'
         },
