@@ -9,7 +9,7 @@
 A [React Native](https://reactnative.dev) bitcoin app plugin component for effortlessly 
 incorporating bitcoin functionality into your React Native apps.
 
-Also, check out [bitcoin-web-app](https://github.com/bitcoin-api/bitcoin-web-app), the React web version of bitcoin-app, brought to you by [Bitcoin-Api.io](https://bitcoin-api.io)!🖖
+Also, check out [bitcoin-web-app](https://www.npmjs.com/package/bitcoin-web-app), the React web version of bitcoin-app, brought to you by [Bitcoin-Api.io](https://bitcoin-api.io)!🖖
 
 
 ## Table of Contents
